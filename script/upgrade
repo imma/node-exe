@@ -4,15 +4,9 @@ function main {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  if ! type -P nexe >/dev/null; then
-    return 1
-  fi
-
-  if ! type -P npkg >/dev/null; then
-    return 1
-  fi
-
-  return 0
+  cd "$shome"
+  
+  block compile yarn upgrade
 }
 
 main "$@"
