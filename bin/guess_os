@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+function main {
+  case "$(uname -s)" in
+    Darwin) echo "macos" ;;
+    Linux) echo "linux" ;;
+  esac
+}
+
+source sub "$BASH_SOURCE" "$@"
