@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+function version {
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  local ver_node_exe="0.0.1"
+  jq -n --arg node_exe "$ver_node_exe" '{node_exe: $node_exe}'
+}
+
+version "$@"
