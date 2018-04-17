@@ -1,2 +1,2 @@
 nexe:
-	cat hello.js | nexe -t $(NODE_VERSION)
+	cat hello.js | nexe -t 8.9.4
