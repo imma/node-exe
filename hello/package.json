@@ -1,0 +1,7 @@
+{
+  "name": "hello",
+  "bin": "hello.js",
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
+}
