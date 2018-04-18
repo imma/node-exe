@@ -1,6 +1,8 @@
 {
+  "name": "hello",
+  "bin": "hello.js",
   "dependencies": {
-    "nexe": "^2.0.0-rc.26",
+    "commander": "^2.15.1",
     "pkg": "^4.3.1"
   }
 }

@@ -7,7 +7,6 @@ function main {
   block compile yarn
 
   mkdir -p "$shome/bin"
-  ln -nfs $(yarn exec -s which nexe) "$shome/bin/"
   ln -nfs $(yarn exec -s which pkg) "$shome/bin/npkg"
 }
 
